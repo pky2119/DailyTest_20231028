@@ -3,14 +3,18 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+
 android {
     namespace = "kr.ac.wku.dailytest_20231028"
-    compileSdk = 33
+    compileSdk = 34
 
+    dataBinding {
+        enable = true
+    }
     defaultConfig {
         applicationId = "kr.ac.wku.dailytest_20231028"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
